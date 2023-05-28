@@ -1,0 +1,116 @@
+.header{
+    padding-left: 312px;
+    padding-right: 312px;
+}
+.header p,a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.header-menu{
+    border-bottom: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        align-items: center;
+        li{
+            margin-left: 20px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+    }
+}
+.header-logo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    img{
+        width: 50%;
+    }
+}
+.list-logo{
+    display: none;
+}
+.header-banner{
+    h1{
+        font-weight: 900;
+        font-size: 120px;
+        line-height: 120%;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    a{
+        border-radius: 20px;
+        border: solid 1px white;
+        background-color: #1E1E1E;
+        font-size: 20px;
+        font-weight: 900;
+        padding: 20px 40px;
+    }
+}
+.header-item{
+    margin-top: 200px;
+    text-align: right;
+    img{
+        margin-right: -5px;
+    }
+}
+
+
+
+/*------------------以下響應式------------------*/
+
+@media(max-width:992px)  {
+    .header {
+        padding: 80px 100px 80px 100px;
+    }
+}
+@media(max-width:767px)  {
+    .header {
+        padding: 80px 60px 80px 60px;
+    }
+    .header-banner{
+        h1{
+            font-size: 48px;
+        }
+    }
+    .header-menu{
+        border-bottom: 1px solid #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            align-items: center;
+            li{
+                margin-left: 20px;
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+    }
+    .header-item{
+        img{
+            width: 33%;
+        }
+    }
+}
+@media(max-width:413px)  {
+    .header{
+        padding: 28px 12px 50px 12px;
+    }
+    .header-menu ul{
+        display: none;
+    }
+    .list-logo{
+        display: flex;
+        align-items: center;
+        img{
+            width: 50px;
+        }
+    }
+    .header-banner{
+        h2{
+            font-size: 48px;
+        }
+    }
+}
+
